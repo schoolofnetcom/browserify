@@ -1,0 +1,22 @@
+module.exports = function($scope, Contacts) {
+    // var obj = [{
+    //     name: 'Leonan',
+    //     telephone: '55 8574-6655'
+    // }, {
+    //     name: 'Luiz',
+    //     telephone: '55 8574-6633'
+    // }, {
+    //     name: 'Wesley',
+    //     telephone: '55 8956-0022'
+    // }];
+
+    // $scope.data = Contacts.setData(obj);
+    //
+    $scope.data = Contacts.getData();
+
+    $scope.remove = function(item) {
+        var index = Contacts.getData().indexOf(item);
+
+        Contacts.getData().splice(index, 1);
+    }
+};

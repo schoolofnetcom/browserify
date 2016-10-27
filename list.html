@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <th>
+            <td>Name</td>
+            <td>Telephone</td>
+        </th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in data">
+            <td>{{item.name}}</td>
+            <td>{{item.telephone}}</td>
+            <td><button type="button" ng-click="remove(item)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
